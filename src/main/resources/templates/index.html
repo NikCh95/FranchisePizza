@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>The Pizza King</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="main">
+        <table>
+            <td>
+                <h1>The Pizza King</h1>
+            </td>
+            <td>
+                <h2> СЕТЬ ПИЦЦЕРИЙ<br> И СУШИ</h2>
+            </td>
+        </table>
+    </div>
+    <div>
+        <img src="https://i0.wp.com/s-i.huffpost.com/gen/2264264/images/o-SKINNY-BEACH-PIZZA-facebook.jpg" alt="Пицца"
+             class="img">
+    </div>
+</header>
+<div class="main">
+    <div class="text">
+        <span class="colortext">Запусти доставку</span> пиццы и суши<br>
+        за 1-2 месяца с прибылью<br>
+        200 000 - 450 000 рублей в месяц
+    </div>
+    <div>
+        <img src="https://ratoratrade.ru/upload/resize_cache/iblock/a12/1000_1000_0/a12832d8c23bcc5dfc8dc43ec1e21247.jpg"
+             alt="Пицца" class="kithen">
+    </div>
+    <input type="checkbox" id="side-checkbox" />
+    <div class="side-panel">
+        <label class="side-button-2" for="side-checkbox">+</label>
+        <div class="side-title">Персональные данные:</div>
+        <p>Информация в панеле</p>
+    </div>
+
+    <div class="side-button-1-wr">
+        <label class="side-button-1" for="side-checkbox">
+            <div class="side-b side-open">Оставить заявку</div>
+        </label>
+    </div>
+
+</div>
+<footer class="footer_main">
+    <table>
+        <td class="footer_td"> The Pizza King</td>
+        <td class="footer_td1"> СЕТЬ ПИЦЦЕРИЙ<br> И СУШИ</td>
+    </table>
+
+    <table class="tel">
+        <td class="footer_td2">8(918)542-21-38<br>
+            <span class="footer_color"><u>Звонок бесплатный</u></span></td>
+    </table>
+</footer>
+    <td th:text="${pizza.img}">ID</td>
+    <td th:text="${pizza1.img}">ID</td>
+    <td th:text="${pizza2.img}">ID</td>
+
+</body>
+</html>

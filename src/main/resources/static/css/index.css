@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.img {
+    width: 100%;
+}
+
+h1 {
+    padding-left: 50px;
+    font-family: 'Quintessential', cursive;
+    font-size: 55px;
+    color:yellow;
+    transform:rotate(-10deg);
+    text-shadow: rgb(8, 8, 8) 0 0 8px;
+
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Yeseva One', cursive;
+    color:rgb(252, 249, 249);
+    text-shadow: rgb(8, 8, 8) 0 0 8px;
+}
+
+.main {
+    position: absolute;
+}
+
+.text {
+    margin-top: -50%;
+    font-size: 30px;
+    font-family: 'Yeseva One', cursive;
+    color: rgb(252, 247, 247);
+    padding-left: 140px;
+    text-shadow: rgb(12, 12, 12) 0 0 8px;
+}
+
+.colortext {
+    color:yellow;
+}
+
+.footer_main {
+    margin-left: 100px;
+}
+
+.footer_td {
+    padding-top: 10px;
+    font-family: 'Quintessential', cursive;
+    font-size: 40px;
+    color: yellow;
+    transform:rotate(-10deg);
+    text-shadow: rgb(4, 15, 1) 0 0 1px;
+}
+
+.footer_td1 {
+    font-size: 20px;
+    font-family: 'Yeseva One', cursive;
+    color:rgb(1, 24, 1);
+    text-shadow: rgb(4, 15, 1) 0 0 1px;
+}
+
+.kithen {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-left: 115%;
+    margin-top: -35%;
+    border: 3px solid yellow;
+}
+
+.tel {
+    float: right;
+    margin-right: 5%;
+    margin-top: -6%;
+}
+
+.footer_td2 {
+    color: yellow;
+    font-size: 30px;
+    text-shadow: rgb(4, 15, 1) 0 0 1px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.footer_color {
+    color: #000;
+}
+
+/* Оформление панели */
+#side-checkbox {
+    display: none;
+}
+
+.side-panel {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: -360px;
+    background: #ab8002;
+    transition: all 0.5s;
+    width: 320px;
+    height: 100vh;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+    color: #FFF;
+    padding: 40px 20px;
+    font-family: 'Yeseva One', cursive;
+}
+.side-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #090808;
+}
+/* Оформление кнопки на странице */
+.side-button-1-wr {
+    margin-left: 40%; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+}
+.side-button-1 {
+    display: inline-block;
+}
+.side-button-1 .side-b {
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: #242323;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    background: yellow;
+    cursor: pointer;
+    border: 2px solid #ba8f06;
+}
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+    color: yellow;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.side-button-1 .side-b:before {
+    top: -6px;
+}
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+    width: 100%;
+    left: 0;
+}
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+#side-checkbox:checked + .side-panel {
+    left: 0;
+}
+/* Оформление кнопки на панеле */
+.side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: #BFE2FF;
+    transition: all 280ms ease-in-out;
+}
+.side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);
+    color: #FFF;
+}
